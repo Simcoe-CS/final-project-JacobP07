@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 1 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="b2">
+
+    <!-- 2 Links to go back to main page or go to fake next level -->
+    <a class="c2" href="Index.html">Go Home</a>  
+    <a class="c1" href="lvl2.html">Next Level</a>
+
+
+
+<!-- the fieldset creates a box to store all the buttons and input types  -->
+    <fieldset style="text-align: center;  ">
+        
+        <!-- Legend tells the user to pick their move -->
+        <legend  class="legend1">Choose Your Move</legend>
+        <label for="">
+
+            <!-- 3 radio buttons that are give the name "OP" to get called in the script -->
+            <input class="in1" type="radio" name="op"> Rock
+            <input class="in1" type="radio" name="op"> Paper
+            <input class="in1" type="radio" name="op"> Scissors
+
+
+
+
+            <h1 class="L1"> </h1>     
+            <!-- The buttons also make the functions that displays the option and resets the game when presed -->
+            <input class="but1" type="button" value="Play Again" onclick="reset()">      
+            <input class="but1" type="button" value="Select" onclick="show()">
+            
+            
+            <br>
+
+<!-- The 2 textboxes that displays the AI and User choices  -->
+            <p style="font-size: medium; color: white;" id="out1"></p>
+            <p style="font-size: medium; color: white;" id="out2"></p>
+           
+
+<!-- All the images are in a div to edit and all of them are given the name"Image" to call the images in the script -->
+            <div id="container">
+                <img src="paper.pmg.png" class="image0" name="image">
+                <img src="rock.png" class="image1" name="image">
+                <img src="scissors.png" class="image2" name="image">
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+            <script src="script.js"></script>
+
+
+</body>
+
+</html>
